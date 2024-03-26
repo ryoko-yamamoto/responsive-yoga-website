@@ -1,4 +1,4 @@
-# chandan-design-agency-website
+# responsive-yoga-website
 
 Design by Young Kim
 https://www.figma.com/@youngkim5
