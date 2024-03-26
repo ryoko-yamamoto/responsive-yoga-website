@@ -1,0 +1,200 @@
+/* Section 4 Style */
+.section-4 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 1rem;
+    font-family: var(--secondary-font);
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-family: var(--primary-font);
+    color: var(--title-color);
+    font-weight: 500;
+}
+
+.section-text {
+    font-size: 0.938rem;;
+    color: var(--text-color);
+}
+
+.gradient-button {
+    color: var(--contrast-color);
+    background: var(--gradient-color);
+    padding: 1rem;
+    border-radius: 64px;
+}
+
+/* Section 4 Images Container Style */
+.images-container {
+    min-height: calc(356.8px - (190px / 4));
+    position: relative;
+}
+
+.card-container {
+    position: relative;
+    min-width: 300px;
+}
+
+.over {
+    z-index: 2;
+}
+
+.underneath {
+    text-align: right;
+    position: absolute;
+    top: 40%;
+    z-index: 0;
+}
+
+/* Section 4 Text container Style */
+.section-4 .text-container {
+    background-color: var(--contrast-color);
+    max-width: 190px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .5rem;
+    position: absolute;
+}
+
+.right-align {
+    top: 10%;
+    right: 0;
+}
+
+.left-align {
+    bottom: 10%;
+    left: 0;
+}
+
+.section-4 .text-container svg {
+    width: 24px;
+    height: 24px;
+}
+
+.section-4 .text-container .img-text {
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 0.813rem;
+    font-weight: 700;
+
+}
+
+/* Section 5 Style */
+.section-5 {
+    padding: 2rem 0;
+    display: grid;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+    font-family: var(--secondary-font);
+    background-color: var(--primary-color);
+    grid-template-areas: 
+    "title title"
+    "button button"
+    "img-1 img-2"
+    "img-3 img-3"
+    "img-4 img-4"
+    ;
+}
+
+.section-5 .section-title span {
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 2rem;
+}
+
+.section-5 .section-title {
+    grid-area: title;
+}
+
+.section-5 .gradient-button {
+    grid-area: button;
+    justify-self: center;
+}
+
+.section-5 > picture:nth-of-type(1) {
+    grid-area: img-1;
+}
+
+.section-5 > picture:nth-of-type(2) {
+    grid-area: img-2;
+    margin-top: 2.5rem;
+}
+
+.section-5 > picture:nth-of-type(3) {
+    grid-area: img-3;
+}
+
+.section-5 > picture:nth-of-type(4) {
+    grid-area: img-4;
+    justify-self: end;
+}
+
+/* Footer Style */
+footer {
+    background-color: var(--first-color-dark);
+    color: var(--text-color-light);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+}
+
+footer hr {
+    border-color: var(--text-color-light);
+}
+
+.logo {
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 1.25rem;
+    font-family: var(--primary-font);
+}
+
+.footer-title {
+    color: var(--contrast-color);
+    font-size: 1.25rem;
+    font-family: var(--primary-font);
+    margin-bottom: 1rem;
+}
+
+.footer-text {
+    font-style: normal;
+    font-size: 0.938rem;
+    font-family: var(--secondary-font);
+}
+
+.text-small {
+    width: 50%;
+}
+
+.copyright {
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+/* Footer navigation style */
+.footer-nav ul{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.footer-nav svg {
+    width: 24px;
+    height: 24px;
+}
