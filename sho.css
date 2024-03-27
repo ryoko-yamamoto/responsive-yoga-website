@@ -87,6 +87,7 @@ nav img {
     gap: 2rem;
 }
 
+
 #checkbox2:checked ~ #nav-sidemenu {
     right: 0;
 }
