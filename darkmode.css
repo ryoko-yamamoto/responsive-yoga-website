@@ -29,7 +29,11 @@ html:has(#checkbox:checked) p {
     color: #A197B4;
 }
 
-html:has(#checkbox:checked) .titlebox-1 p,
+html:has(#checkbox:checked) a {
+    color: var(--contrast-color);
+}
+
+html:has(#checkbox:checked) .titlebox-1  p,
 html:has(#checkbox:checked) #number,
 html:has(#checkbox:checked) .titlebox-3 p {
     color: #D1C0F1;
@@ -38,4 +42,9 @@ html:has(#checkbox:checked) .titlebox-3 p {
 html:has(#checkbox:checked) .section6 h2,
 html:has(#checkbox:checked) .section6 p {
     color: var(--contrast-color);
+}
+
+
+html:has(#checkbox:checked) #checkbox-label2 {
+    background-image: url('./assets/menu-dark.png');
 }
