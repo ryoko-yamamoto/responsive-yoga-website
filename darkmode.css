@@ -1,0 +1,50 @@
+html {
+    --primary-color: #f8f0fd;
+    --first-color-dark: #1e0849;
+    --secondary-color: #8b52ff;
+    --third-color: #ff52ae;
+    --text-color: #4b3e65;
+    --title-color: #220953;
+    --gradient-color: linear-gradient(to right, #ff52ae, #8b52ff);
+    --text-color-light: #a197b4;
+    --first-color-light: #e5d9fd;
+    --contrast-color: #ffffff;
+    font-size: 16px;
+    --primary-font: "Lora", serif;
+    --secondary-font: "Poppins", sans-serif;
+
+}
+
+html:has(#checkbox:checked) body,
+html:has(#checkbox:checked) section,
+html:has(#checkbox:checked) footer {
+    background-color: #14092A;
+}
+
+html:has(#checkbox:checked) h2{
+    color: #D1C0F1;
+}
+
+html:has(#checkbox:checked) p {
+    color: #A197B4;
+}
+
+html:has(#checkbox:checked) a {
+    color: var(--contrast-color);
+}
+
+html:has(#checkbox:checked) .titlebox-1  p,
+html:has(#checkbox:checked) #number,
+html:has(#checkbox:checked) .titlebox-3 p {
+    color: #D1C0F1;
+}
+
+html:has(#checkbox:checked) .section6 h2,
+html:has(#checkbox:checked) .section6 p {
+    color: var(--contrast-color);
+}
+
+
+html:has(#checkbox:checked) #checkbox-label2 {
+    background-image: url('./assets/menu-dark.png');
+}
