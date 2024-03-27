@@ -83,6 +83,15 @@ nav img {
     background-image: url('./assets/sun.png');
 }
 
+#checkbox:checked ~ #checkbox-label2 {
+    background-image: url('./assets/menu-dark.png');
+}
+
+#checkbox:checked ~ .section1 {
+    background-color: red;
+}
+
+
 #nav-sidemenu {
     position: fixed;
     /* top: -1px; */
@@ -119,11 +128,6 @@ input[type="checkbox"] {
 #checkbox2:checked + #checkbox-label2 {
     background-image: url('./Assets/close.png');
 }
-
-/* #checkbox2:checked > #menu-icon {
-    display: none;
-    border: 1px solid red;
-} */
 
 .sub-item {
     padding-top: 2rem;
