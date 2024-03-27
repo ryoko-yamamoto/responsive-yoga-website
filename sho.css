@@ -61,8 +61,6 @@ h2 {
 }
 
 
-
-#nav-svg,
 nav img {
     width: 1.5rem;
 }
@@ -70,6 +68,19 @@ nav img {
 #close-icon {
     display: none;
     z-index: 2;
+}
+
+#checkbox-label {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url('./assets/moon.png');
+    background-size: cover;
+    z-index: 2;
+}
+
+#checkbox:checked + #checkbox-label {
+    background-image: url('./assets/sun.png');
 }
 
 #nav-sidemenu {
@@ -137,18 +148,21 @@ section {
     font-weight: normal;
     padding-bottom: 1rem;
     font-size: 2.2rem;
+    font-family: var(--primary-font);
 }
 
 .section6 p {
     padding-bottom: 1.5rem;
     font-size: 1.4rem;
     font-weight: 50;
+    font-family: var(--secondary-font);
 }
 
 #email-input {
     padding: 1.5rem 1rem;
     border-radius: 3rem;
     width: 100%;
+    border: none;
 }
 
 #email-input::placeholder {
