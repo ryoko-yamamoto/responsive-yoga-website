@@ -61,8 +61,6 @@ h2 {
 }
 
 
-
-#nav-svg,
 nav img {
     width: 1.5rem;
 }
@@ -70,6 +68,19 @@ nav img {
 #close-icon {
     display: none;
     z-index: 2;
+}
+
+#checkbox-label {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url('./assets/moon.png');
+    background-size: cover;
+    z-index: 2;
+}
+
+#checkbox:checked + #checkbox-label {
+    background-image: url('./assets/sun.png');
 }
 
 #nav-sidemenu {
