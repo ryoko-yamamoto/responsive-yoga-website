@@ -21,6 +21,10 @@ html:has(#checkbox:checked) footer {
     background-color: #14092A;
 }
 
+html:has(#checkbox:checked) #nav-sidemenu {
+    background-color: rgba(26, 26, 26, 0.7);
+}
+
 html:has(#checkbox:checked) .sub-item a {
     color: #D1C0F1;
 }
@@ -96,7 +100,7 @@ html:has(#checkbox:checked) .section3-2 p {
     color: #D1C0F1;
 }
 
-html:has(#checkbox:checked) .number-box .number-gradient,
+.logo .number-box .number-gradient,
 html:has(#checkbox:checked) #number-gradient,
 html:has(#checkbox:checked) .img-text,
 html:has(#checkbox:checked) .logo {
@@ -106,3 +110,7 @@ html:has(#checkbox:checked) .logo {
     color: transparent;
 }
 
+
+html:has(#checkbox:checked) .logo {
+    
+}
