@@ -1,169 +1,345 @@
-@media screen and (min-width: 992px){
-    /* Section 4 Desktop Layout */
-    .section-title {
-        font-size: 4rem;
-    }
+@media screen and (min-width: 992px) {
+  /* Header */
+  header {
+    margin: 0rem 5rem;
+    min-height: 88px;
+    display: flex;
+    align-items: center;
+  }
 
-    .section-text {
-        font-size: 1rem;;
-    }
+  .nav-menu {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 
-    .section-4 {
-        flex-direction: row;
-        align-items: center;
-        min-height: 600px;
-    }
+  .nav-menu > :nth-child(2) {
+    display: flex;
+  }
+  .nav-menu > :nth-child(1) {
+    padding-left: 3rem;
+  }
 
-    .section-4 .content-container {
-        text-align: left;
-        align-items: flex-start;
-        width: 40%;
-    }
+  #nav-sidemenu {
+    position: static;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    width: auto;
+    height: 0;
+    font-family: var(--secondary-font);
+    flex: 1;
+  }
 
-    .images-container {
-        align-self: flex-start;
-        flex-grow: 1;
-    }
+  #nav-sidemenu li a:hover {
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
 
-    .underneath {
-        top: 65%;
-        right: 0;
-    }
+  .sub-item {
+    margin: 0;
+    padding: 0;
+  }
 
-    .over {
-        text-align: left;
-    }
+  #checkbox-label2 {
+    visibility: hidden;
+  }
 
-    .right-align {
-        left: 350px;
-        top: 20%;
-    }
+  /* Section1 */
+  .flex-container1 {
+    display: grid;
+    min-height: 882px;
+    grid-template-rows: 3fr 1fr 1fr 3fr;
+    grid-template-columns: 1fr 1fr;
+  }
 
-    .left-align {
-        bottom: 20%;
-    }
+  .titlebox-1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    font-size: 3.5rem;
+    position: relative;
+    text-align: left;
+  }
 
-    .section-4 .text-container {
-        font-size: 1rem;
-    }
+  .home-star {
+    position: absolute;
+    left: 20rem;
+    top: 3rem;
+  }
 
-    /* Section 5 Desktop Layout */
-    .section-5 {
-        grid-template-areas: 
-        "img-1 title title img-2"
-        "img-1 button button img-2"
-        "img-3 img-3 img-4 img-4"
-        ;
-        gap: 1.5rem;
-    }
+  .textbox-1 {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    text-align: left;
+    color: var(--text-color);
+    position: relative;
+  }
 
-    .section-5 .section-title span {
-        font-size: 4rem;
-    }
+  .circle {
+    position: absolute;
+    left: 0rem;
+    top: -1rem;
+  }
 
-    .section-5 .section-title {
-        align-self: flex-end;
-        margin-top: 2rem;
-    }
+  .button-1 {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    justify-self: flex-start;
+  }
 
-    .section-5 .gradient-button {
-        align-self: flex-start;
-    }
-    
-    .section-5 > picture:nth-of-type(2) {
-        margin-top: 0;
-    }
+  .class-sorts {
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+  }
 
-    /* Section 6 Desktop Layout */
-    .section6 {
-        width: 80%;
-        padding: 3rem 7rem;
-        margin: 2.5rem auto;
-    }
-    
-    .section6 h2 {
-        font-size: 3.5rem;
-    }
-    
-    .section6 > div {
-        position: relative;
-    }
+  .first-sentence {
+    font-size: 3rem;
+  }
 
-    #email-input {
-        padding: 1.5rem;
-        padding-right: 12rem;
-    }
+  .woman-yoga {
+    grid-row: 1 / 5;
+    grid-column: 2 / 3;
+  }
 
-    #subscribe {
-        position: absolute;
-        width: fit-content;
-        top: calc((67.2px - 54.4px) / 2);
-        right: 2%;
-        padding: 0.75rem;
-        margin: 0;
-        border: none;
-    }
+  /* Section 2 */
+  .section2 {
+    min-height: 226px;
+  }
+  .grid-container2 {
+    display: grid;
+    grid-template-areas: "number stretch explain next-button";
+    place-items: center;
+    margin: 0 2rem;
+  }
 
-    /* Footer Desktop Layout */
-    footer {
-        display: grid;
-        gap: 2rem;
-        grid-template-areas: 
-        "logo address contact office"
-        "text address contact office"
-        "line line line line"
-        "media media copyright copyright"
-        ;
-        padding: 5rem;
-    }
+  /* Grid Areas for Items(elements) */
+  #number {
+    font-size: 3rem;
+    align-self: center;
+    justify-self: center;
+    width: 10vw;
+  }
+  #explain {
+    text-align: left;
+    font-size: 1.2rem;
+    justify-self: flex-start;
+    position: relative;
+    width: 30vw;
+  }
 
-    footer .logo {
-        grid-area: logo;
-    }
+  .list-star {
+    position: absolute;
+    left: 0.3rem;
+    top: -2rem;
+  }
 
-    .footer-title {
-        font-size: 1.5rem;
-    }
-    
-    .footer-text {
-        font-size: 1rem;
-    }
+  #next-button {
+    align-self: center;
+    justify-self: center;
+    width: 10vw;
+  }
 
-    .text-small {
-        width: 65%;
-    }
+  /* Section3 */
+  .flex-container3 {
+    min-height: 679px;
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-columns: 3fr 4fr;
+  }
+  .titlebox-3 {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    align-self: center;
+  }
 
-    footer .address-container {
-        grid-area: address;
-    }
+  .titlebox-3 p {
+    font-size: 3.5rem;
+    text-align: left;
+  }
 
-    footer .contact-container {
-        grid-area: contact;
-    }
+  .textbox-3 {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    text-align: left;
+    align-self: center;
+    font-size: 1.1rem;
+  }
 
-    footer .office-container {
-        grid-area: office;
-    }
+  .button-3 {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    align-self: flex-start;
+  }
 
-    .footer-nav {
-        grid-area: media;
-        justify-self: flex-start;
-        align-self: center;
-    }
+  .section3-2 {
+    grid-row: 1 / 4;
+    grid-column: 1 / 2;
+  }
 
-    footer > p.footer-text:nth-child(1){
-        grid-area: text;
-    }
+  /* Section 4 Desktop Layout */
+  .section-title {
+    font-size: 4rem;
+  }
 
-    footer hr {
-        grid-area: line;
-    }
+  .section-text {
+    font-size: 1rem;
+  }
 
-    .copyright {
-        grid-area: copyright;
-        align-self: center;
-        justify-self: flex-end;
-        text-wrap: nowrap;
-    }
-    
+  .section-4 {
+    flex-direction: row;
+    align-items: center;
+    min-height: 600px;
+  }
+
+  .section-4 .content-container {
+    text-align: left;
+    align-items: flex-start;
+    width: 40%;
+  }
+
+  .images-container {
+    align-self: flex-start;
+    flex-grow: 1;
+  }
+
+  .underneath {
+    top: 65%;
+    right: 0;
+  }
+
+  .over {
+    text-align: left;
+  }
+
+  .right-align {
+    left: 350px;
+    top: 20%;
+  }
+
+  .left-align {
+    bottom: 20%;
+  }
+
+  .section-4 .text-container {
+    font-size: 1rem;
+  }
+
+  /* Section 5 Desktop Layout */
+  .section-5 {
+    grid-template-areas:
+      "img-1 title title img-2"
+      "img-1 button button img-2"
+      "img-3 img-3 img-4 img-4";
+    gap: 1.5rem;
+  }
+
+  .section-5 .section-title span {
+    font-size: 4rem;
+  }
+
+  .section-5 .section-title {
+    align-self: flex-end;
+    margin-top: 2rem;
+  }
+
+  .section-5 .gradient-button {
+    align-self: flex-start;
+  }
+
+  .section-5 > picture:nth-of-type(2) {
+    margin-top: 0;
+  }
+
+  /* Section 6 Desktop Layout */
+  .section6 {
+    width: 80%;
+    padding: 3rem 7rem;
+    margin: 2.5rem auto;
+  }
+
+  .section6 h2 {
+    font-size: 3.5rem;
+  }
+
+  .section6 > div {
+    position: relative;
+  }
+
+  #email-input {
+    padding: 1.5rem;
+    padding-right: 12rem;
+  }
+
+  #subscribe {
+    position: absolute;
+    width: fit-content;
+    top: calc((67.2px - 54.4px) / 2);
+    right: 2%;
+    padding: 0.75rem;
+    margin: 0;
+    border: none;
+  }
+
+  /* Footer Desktop Layout */
+  footer {
+    display: grid;
+    gap: 2rem;
+    grid-template-areas:
+      "logo address contact office"
+      "text address contact office"
+      "line line line line"
+      "media media copyright copyright";
+    padding: 5rem;
+  }
+
+  footer .logo {
+    grid-area: logo;
+  }
+
+  .footer-title {
+    font-size: 1.5rem;
+  }
+
+  .footer-text {
+    font-size: 1rem;
+  }
+
+  .text-small {
+    width: 65%;
+  }
+
+  footer .address-container {
+    grid-area: address;
+  }
+
+  footer .contact-container {
+    grid-area: contact;
+  }
+
+  footer .office-container {
+    grid-area: office;
+  }
+
+  .footer-nav {
+    grid-area: media;
+    justify-self: flex-start;
+    align-self: center;
+  }
+
+  footer > p.footer-text:nth-child(1) {
+    grid-area: text;
+  }
+
+  footer hr {
+    grid-area: line;
+  }
+
+  .copyright {
+    grid-area: copyright;
+    align-self: center;
+    justify-self: flex-end;
+    text-wrap: nowrap;
+  }
 }
