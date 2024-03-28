@@ -43,10 +43,11 @@
               <p>Best <span class="yoga1">Yoga</span></p>
               <p>Teacher</p>
               <img
-                class="home-star"
+                class="home-star lightmode-photo"
                 src="./assets/logos/home-star.png"
                 alt="home-star"
               />
+              <img src="./assets/darkmode/home-star.png" alt="dark" class="home-star darkmode-photo">
             </div>
             <div class="textbox-1">
               <p>
@@ -70,7 +71,8 @@
                 <p>Participants</p>
               </div>
             </div>
-            <img src="./assets/imgs/home-yoga.png" alt="woman-yoga" />
+            <img src="./assets/imgs/home-yoga.png" alt="woman-yoga"/>
+  
           </div>
         </section>
   
@@ -78,10 +80,13 @@
           <div class="grid-container2">
             <p id="number">#01</p>
             <img
+            class="lightmode-photo"
               id="stretch"
               src="./assets/imgs/List box.png"
               alt="woman-stretch"
             />
+            <img src="./assets/darkmode/woman.png" alt="woman-yoga" id="stretch" class="darkmode">
+  
             <div id="explain">
               <img
                 class="list-star"
@@ -132,17 +137,20 @@
         </section>
       
         <section class="section-4">
-          <h2 class="section-title">Anytime, Any Place, Any Workout</h2>
-          <p class="section-text">
-            Take your routine at any time of your day, 
-            with the new videos and with the teachers who will guide you.
-          </p>
-          <a href="#" class="gradient-button">Get Started Free →</a>
+          <div class="content-container">
+            <h2 class="section-title">Anytime, Any Place, Any Workout</h2>
+            <p class="section-text">
+              Take your routine at any time of your day, 
+              with the new videos and with the teachers who will guide you.
+            </p>
+            <a href="#" class="gradient-button">Get Started Free →</a>
+          </div>
           <div class="images-container">
             <div class="card-container over">
               <picture>
                 <source media="(min-width: 992px)" srcset="./assets/imgs/routine-yoga-1-big.png">
-                <img src="./assets/imgs/routine-yoga-1.png" alt="Woman streching">
+                <img src="./assets/imgs/routine-yoga-1.png" alt="Woman streching" class="lightmode-photo">
+                <img src="./assets/darkmode/routineyoga1.png" alt="Woman exercising" class="darkmode-photo">
               </picture>
               <div class="text-container right-align">
                 <svg aria-labelledby="media" aria-hidden="true" role="img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -161,7 +169,8 @@
             <div class="card-container underneath">
               <picture>
                 <source media="(min-width: 992px)" srcset="./assets/imgs/routine-yoga-2-big.png">
-                <img src="./assets/imgs/routine-yoga-2.png" alt="Woman exercising">
+                <img src="./assets/imgs/routine-yoga-2.png" alt="Woman exercising" class="lightmode-photo">
+                <img src="./assets/darkmode/routineyoga2.png" alt="Woman exercising" class="darkmode-photo">
               </picture>
               <div class="text-container left-align">
                 <svg aria-labelledby="run-icon" aria-hidden="true" role="img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -184,20 +193,25 @@
           <h2 class="section-title">Follow Us On<br>Instagram<br><span>#YOGA</span></h2>
           <a class="gradient-button" href="#">Follow<br>→</a>
           <picture>
-            <source media="(min-width: 992px)" srcset="./assets/imgs/follow-yoga-1-big.png">
-            <img src="./assets/imgs/follow-yoga-1.png" alt="Woman stretching">
+            <source media="(min-width: 992px)" srcset="./assets/imgs/follow-yoga-1-big.png" >
+            <img src="./assets/imgs/follow-yoga-1.png" alt="Woman stretching" class="lightmode-photo">
+            <source media="(min-width: 992px)" src="./assets/darkmode/followyoga1.png">
+            <img src="./assets/darkmode/followyoga1.png" alt="Woman stretching" class="darkmode-photo">
           </picture>
           <picture>
             <source media="(min-width: 992px)" srcset="./assets/imgs/follow-yoga-2-big.png">
-            <img src="./assets/imgs/follow-yoga-2.png" alt="Woman stretching">
+            <img src="./assets/imgs/follow-yoga-2.png" alt="Woman stretching" class="lightmode-photo">
+            <img src="./assets/darkmode/followyoga2.png" alt="Woman stretching" class="darkmode-photo">
           </picture>
           <picture>
             <source media="(min-width: 992px)" srcset="./assets/imgs/follow-yoga-3-big.png">
-            <img src="./assets/imgs/follow-yoga-3.png" alt="Woman stretching">
+            <img src="./assets/imgs/follow-yoga-3.png" alt="Woman stretching" class="lightmode-photo">
+            <img src="./assets/darkmode/followyoga3.png" alt="Woman stretching" class="darkmode-photo">
           </picture>
           <picture>
             <source media="(min-width: 992px)" srcset="./assets/imgs/follow-yoga-4-big.png">
-            <img src="./assets/imgs/follow-yoga-4.png" alt="Man stretching">
+            <img src="./assets/imgs/follow-yoga-4.png" alt="Man stretching" class="lightmode-photo">
+            <img src="./assets/darkmode/followyoga4.png" alt="Woman stretching" class="darkmode-photo">
           </picture>
         </section>
   
@@ -205,6 +219,7 @@
           <h2>Join our newsletter</h2>
           <p>Subscribe to our newsletter to be aware of many things on discounts,
              gifts, training and much more. Just enter your email.</p>
+          <div>
             <input type="text" id="email-input" name="email" placeholder="For latest update send mail" required>
             <button type="button" id="subscribe">
               Subscribe <img src="./Assets/Right arrow icon 1.png" alt="right-arrow">

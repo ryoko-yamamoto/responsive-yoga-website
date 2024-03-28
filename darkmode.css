@@ -21,7 +21,7 @@ html:has(#checkbox:checked) footer {
     background-color: #14092A;
 }
 
-html:has(#checkbox:checked) h2{
+html:has(#checkbox:checked) h2 {
     color: #D1C0F1;
 }
 
@@ -29,11 +29,11 @@ html:has(#checkbox:checked) p {
     color: #A197B4;
 }
 
-html:has(#checkbox:checked) a {
+html:has(#checkbox:checked) a p {
     color: var(--contrast-color);
 }
 
-html:has(#checkbox:checked) .titlebox-1  p,
+html:has(#checkbox:checked) .titlebox-1 p,
 html:has(#checkbox:checked) #number,
 html:has(#checkbox:checked) .titlebox-3 p {
     color: #D1C0F1;
@@ -48,3 +48,45 @@ html:has(#checkbox:checked) .section6 p {
 html:has(#checkbox:checked) #checkbox-label2 {
     background-image: url('./assets/menu-dark.png');
 }
+
+/* html:has(#checkbox:checked) .home-star::after {
+    background-image: url("./assets/listbox.png");
+}
+
+html:has(#checkbox:checked) .home-star {
+    opacity: 0;
+} */
+
+.darkmode-photo {
+    display: none;
+}
+
+
+
+html:has(#checkbox:checked) .lightmode-photo {
+    display: none;
+}
+html:has(#checkbox:checked) .darkmode-photo {
+    display: block;
+}
+
+html:has(#checkbox:checked) .heart-box,
+html:has(#checkbox:checked) .number-box,
+html:has(#checkbox:checked) .text-container{
+    background-color: #372A51;
+}
+
+html:has(#checkbox:checked) .section3-2 p {
+    color: #D1C0F1;
+}
+
+html:has(#checkbox:checked) .number-box .number-gradient,
+html:has(#checkbox:checked) #number-gradient,
+html:has(#checkbox:checked) .img-text,
+html:has(#checkbox:checked) .logo {
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
