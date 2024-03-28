@@ -21,8 +21,26 @@ html:has(#checkbox:checked) footer {
     background-color: #14092A;
 }
 
+html:has(#checkbox:checked) .sub-item a {
+    color: #D1C0F1;
+}
+
+html:has(#checkbox:checked) #nav-sidemenu li a:hover {
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
 html:has(#checkbox:checked) h2 {
     color: #D1C0F1;
+}
+
+html:has(#checkbox:checked) header h2 {
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 html:has(#checkbox:checked) p {
@@ -60,8 +78,6 @@ html:has(#checkbox:checked) .home-star {
 .darkmode-photo {
     display: none;
 }
-
-
 
 html:has(#checkbox:checked) .lightmode-photo {
     display: none;

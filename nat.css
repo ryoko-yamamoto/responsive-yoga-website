@@ -130,20 +130,20 @@
     justify-self: center;
 }
 
-.section-5 > picture:nth-of-type(1) {
+.section-5 > .img1 {
     grid-area: img-1;
 }
 
-.section-5 > picture:nth-of-type(2) {
+.section-5 > .img2 {
     grid-area: img-2;
     margin-top: 2.5rem;
 }
 
-.section-5 > picture:nth-of-type(3) {
+.section-5 > .img3 {
     grid-area: img-3;
 }
 
-.section-5 > picture:nth-of-type(4) {
+.section-5 > .img4 {
     grid-area: img-4;
     justify-self: end;
 }
