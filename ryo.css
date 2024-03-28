@@ -24,6 +24,19 @@ html {
   --secondary-font: "Poppins", sans-serif;
 }
 
+@keyframes rotate {
+  from   {transform: rotate(90deg);}
+  to  {transform: rotate(0);}
+}
+
+@keyframes fadeIn {
+  0%   {filter:brightness(0); }
+  25%  {filter:brightness(0.25); }
+  50%  {filter:brightness(0.5); }
+  75%  {filter:brightness(0.75);}
+  100% {filter:brightness(1);}
+}
+
 .section1 {
   background-color: var(--primary-color);
   padding: 3rem 1.5rem;
@@ -44,10 +57,15 @@ html {
   color: var(--title-color);
 }
 
+.woman-yoga img {
+  animation: fadeIn 2s ease-in -0.5s;
+}
+
 .home-star {
   position: absolute;
   left: 2rem;
   bottom: 1rem;
+  animation: rotate 5s linear 0s infinite alternate;
 }
 
 .yoga1 {
